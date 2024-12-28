@@ -44,10 +44,12 @@ body {
     line-height: var(--line-height-base);
     color: var(--text-color);
     background: var(--background-color);
+}
+.wrapper {
+    width: auto;
+    padding-left: 24px;
+    padding-right: 24px;
 
-    /* Original body styling retained */
-    margin: 0 24px;
-    min-height: 100vh;
 }
 
 /* Headings */
@@ -578,7 +580,7 @@ main {
 ====================================== */
 .footer {
     width: 100%;
-    height: 360px;
+    height: auto;
     background-color: var(--black-color);
     color: var(--white-color);
     padding: 24px;
@@ -634,15 +636,6 @@ main {
  Responsive Design
 ====================================== */
 
-
-@media (max-width: 540px) {
-    .logo-container {
-        display: none;
-    }
-    .inner-nav {
-        justify-content: center;
-    }
- }
 @media (max-width: 440px) {
     .header {
         height: auto; /* allow it to expand if items stack */
@@ -713,6 +706,15 @@ main {
     
 }
 
+@media (max-width: 540px) {
+    .logo-container {
+        display: none;
+    }
+    .inner-nav {
+        justify-content: center;
+    }
+ }
+
 @media (max-width: 768px) {
     .cta-container {
         flex-direction: column;
@@ -754,10 +756,8 @@ main {
     .about-image {
         width: 100%; /* full width */
       }
-}
-
-@media (max-width: 768px) {
-    .footer-container {
+    
+      .footer-container {
         align-items: center;
     }
     .footer-links {
@@ -765,6 +765,7 @@ main {
         gap: 8px;
     }
 }
+
 
 /* ======================================
    CV Page Styles
@@ -801,4 +802,86 @@ main {
     background-color: #4037de;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+
+
+/* ======================================
+   Hamburger Menu Styles on Mobile
+====================================== */
+/* 1) Menu Toggle (Hamburger) - default hidden on large screens */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    /* a little spacing or size so it’s easy to tap */
+    width: 24px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end;
+  }
+  
+  /* The bars */
+  .menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color) ;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  /* 2) Transform bars into X when active */
+  .menu-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0; /* middle bar hidden */
+  }
+  .menu-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+ 
+  
+  /* On mobile, hide the navbar by default unless .active is toggled */
+  @media (max-width: 440px) {
+    .header {
+        background-color: var(--primary-color);
+        width: 89%;
+        height: auto;
+        padding: 8px 8px 8px 8px;
+        margin: 4px auto 4px auto;
+        border-radius: 8px 8px 0 0;
+      }
+      .inner-nav {
+        justify-content: space-evenly;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid var(--white-color, 0.12);
+        padding: 8px 8px 8px 8px;
+        border-radius: 8px 8px 0 0;
+    }
+    .navbar {
+      display: none; /* hide the navbar */
+      flex-direction: column;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0px 4px 6px var(--shadow-color);
+    }
+    .menu-toggle {
+      display: flex; /* show the hamburger */
+    }
+    .navbar.active {
+      display: flex; /* show the navbar */
+    }
+
+    main {
+        padding-top: 46px;
+    }
+    .nav-text {
+        font-size: 0.85rem;
+        color: var(--white-color);
+      }
+  }
   
