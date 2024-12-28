@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zagros Jawar Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/menu.js" defer></script>
 </head>
 <body>
     <!-- Header section-->
@@ -15,7 +16,13 @@
                     <img src="assets/img/icons/logo.svg" alt="Zagros Jawar Logo">
                 </a>
             </div>
-            <nav class="navbar">
+            <!-- Hamburger Icon / Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav class="navbar" id="navbar">
                 <a href="#projects" class="nav-link">
                     <img src="assets/img/icons/portfolio.svg" alt="Portfolio" class="nav-icon">
                     <span class="nav-text">Portfolio</span>
@@ -35,6 +42,7 @@
             </nav>
         </div>
     </header>
+    <div class="wrapper">
     <main>
         <!-- Hero and bio section-->
         <section class="hero">
@@ -297,6 +305,7 @@
             </div>
         </section>
     </main>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <!-- Footer Navigation -->
