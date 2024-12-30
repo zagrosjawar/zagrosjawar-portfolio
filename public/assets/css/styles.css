@@ -25,7 +25,7 @@ html {
     --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
 
     /* Fonts */
-    --font-sans: "SF Pro Text", Arial, sans-serif;
+    --font-sans: "SF Pro Text", Verdana, sans-serif;
     --font-display: "SF Pro Display", Arial, sans-serif;
 
     /* Font Sizes & Line Heights */
@@ -66,7 +66,7 @@ h1 {
 }
 h2 {
     font-size: 2rem; /* ~32px */
-    font-weight: 600;
+    font-weight: 500;
 }
 h3 {
     font-size: 1.5rem; /* ~24px */
@@ -773,7 +773,7 @@ main {
 .cv-preview {
     max-width: 900px; /* or 100% if you prefer full width */
     background-color: var(--white-color);
-    margin: 24px auto;
+    margin: 0px auto 24px auto;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px var(--shadow-color);
@@ -860,6 +860,16 @@ main {
         border: 1px solid var(--white-color, 0.12);
         padding: 8px 8px 8px 8px;
         border-radius: 8px 8px 0 0;
+    }
+    .logo-container {
+        display: block;
+        height: 24px;
+    }
+    .logo-hamburger-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
     .navbar {
       display: none; /* hide the navbar */
