@@ -272,6 +272,25 @@ main {
     margin-top: 54px;
 }
 
+/* Hi icon Wave Animation */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(10deg); }
+    80% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  #wave-icon {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: inline-block; /* So it can animate. */
+  }
+  #wave-icon.animate-wave {
+    animation: wave 1.2s linear infinite;
+  }
+  
 /* .hero-title, .hero-subtitle, and .hero-description
    now controlled by global typography section. */
 .bio .hero-title {
@@ -604,6 +623,7 @@ main {
     background-color: var(--white-color);
     max-width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 .footer-links {
     list-style: none;
