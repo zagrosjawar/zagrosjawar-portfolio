@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Preview | Download</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <style>
-       
-    </style>
-</head>
-<body>
-    <!-- Header section-->
-    <header class="header">
-        <div class="inner-nav">
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/img/favicon/favicon.ico" alt="Zagros Jawar Logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <!-- Theme Color for Mobile Browsers -->
+        <meta name="theme-color" content="#6366f1">
+      
+        <!-- Title and Description -->
+        <title>Zagros Jawar | CV Download</title>
+        <meta 
+          name="description" 
+          content="Download or preview Zagros Jawar’s CV: UI/UX Designer and Developer with a passion for creating engaging digital experiences.">
+      
+        <!-- Open Graph (OG) for Social Sharing -->
+        <meta property="og:title" content="Zagros Jawar | CV Download">
+        <meta 
+          property="og:description" 
+          content="Discover Zagros Jawar’s CV and learn more about his skills, experience, and achievements in UI/UX design and development.">
+        <meta property="og:image" content="https://zagrosjawar.com/assets/img/profile.jpg">
+        <meta property="og:url" content="https://zagrosjawar.com/cv.html">
+        <meta property="og:type" content="website">
+      
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Zagros Jawar | CV Download">
+        <meta 
+          name="twitter:description" 
+          content="View or download Zagros Jawar’s CV to learn about his background, skills, and design approach.">
+        <meta name="twitter:image" content="https://zagrosjawar.com/assets/img/profile.jpg">
+      
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://zagrosjawar.com/cv.html">
+      
+        <!-- Favicon & App Icons (same as homepage) -->
+        <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="zagros jawar">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+      
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+      </head>
+      
+    <body>
+        <!-- Header section-->
+        <header class="header">
+            <div class="inner-nav">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/img/favicon/favicon.ico" alt="Zagros Jawar Logo">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html#projects" class="nav-link">
+                        <img src="assets/img/icons/portfolio.svg" alt="Portfolio" class="nav-icon">
+                        <span class="nav-text">Portfolio</span>
+                    </a>
+                    <a href="cv.html" class="nav-link">
+                        <img src="assets/img/icons/cv.svg" alt="CV" class="nav-icon">
+                        <span class="nav-text">CV</span>
+                    </a>
+                    <a href="index.html#about-me" class="nav-link">
+                        <img src="assets/img/icons/about_me.svg" alt="About Me" class="nav-icon">
+                        <span class="nav-text">About Me</span>
+                    </a>
+                    <a href="index.html#contact" class="nav-link">
+                        <img src="assets/img/icons/contact.svg" alt="Contact" class="nav-icon">
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="cv-preview">
+            <h1 class="section-title">Curriculum Vitae</h1>
+            <p class="intro-text">
+                Below is my CV—feel free to scroll or download a PDF. 
+                You’ll find my work experience, education, and key skills in one place.
+            </p>
+        
+            <iframe src="assets/pdf/CV_Zagros_Jawar.pdf" class="cv-iframe"></iframe>
+        
+            <div class="download-btn-container">
+                <a href="assets/pdf/CV1_Zagros_Jawar.pdf" download class="cta">
+                <img src="assets/img/icons/pdf-icon.svg" alt="PDF icon" style="width: 18px; margin-right: 8px;" />
+                Download CV
                 </a>
             </div>
-            <nav class="navbar">
-                <a href="index.html#projects" class="nav-link">
-                    <img src="assets/img/icons/portfolio.svg" alt="Portfolio" class="nav-icon">
-                    <span class="nav-text">Portfolio</span>
-                </a>
-                <a href="cv.html" class="nav-link">
-                    <img src="assets/img/icons/cv.svg" alt="CV" class="nav-icon">
-                    <span class="nav-text">CV</span>
-                </a>
-                <a href="index.html#about-me" class="nav-link">
-                    <img src="assets/img/icons/about_me.svg" alt="About Me" class="nav-icon">
-                    <span class="nav-text">About Me</span>
-                </a>
-                <a href="index.html#contact" class="nav-link">
-                    <img src="assets/img/icons/contact.svg" alt="Contact" class="nav-icon">
-                    <span class="nav-text">Contact</span>
-                </a>
-            </nav>
-        </div>
-    </header>
+            </section>
+        </main>
+        
 
-    <main>
-        <section class="cv-preview">
-          <h1 class="section-title">Curriculum Vitae</h1>
-          <p class="intro-text">
-            Below is my CV—feel free to scroll or download a PDF. 
-            You’ll find my work experience, education, and key skills in one place.
-          </p>
-      
-          <iframe src="assets/pdf/CV_Zagros_Jawar.pdf" class="cv-iframe"></iframe>
-      
-          <div class="download-btn-container">
-            <a href="assets/pdf/CV1_Zagros_Jawar.pdf" download class="cta">
-              <img src="assets/img/icons/pdf-icon.svg" alt="PDF icon" style="width: 18px; margin-right: 8px;" />
-              Download CV
-            </a>
-          </div>
-        </section>
-      </main>
-      
-
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Footer Navigation -->
-            <nav class="footer-nav">
-                <a href="index.html" class="footer-logo">
-                    <img src="assets/img/favicon/favicon.ico" alt="Zagros Jawar Logo" class="logo">
-                </a>
-                <ul class="footer-links">
-                    <li><a href="index.html#projects" class="footer-link">Portfolio</a></li>
-                    <li><a href="#" class="footer-link">CV</a></li>
-                    <li><a href="index.html#about-me" class="footer-link">About Me</a></li>
-                    <li><a href="index.html#contact" class="footer-link">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- Footer Copyright and Credit -->
-            <div class="footer-info">
-                <p class="footer-copyright">
-                    Copyright © 2025 Zagros Jawar. All rights reserved.
-                </p>
-                <p class="footer-credit">
-                    Designed and developed by <strong>Zagros Jawar</strong>.
-                </p>
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Footer Navigation -->
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/img/favicon/favicon.ico" alt="Zagros Jawar Logo" class="logo">
+                    </a>
+                    <ul class="footer-links">
+                        <li><a href="index.html#projects" class="footer-link">Portfolio</a></li>
+                        <li><a href="#" class="footer-link">CV</a></li>
+                        <li><a href="index.html#about-me" class="footer-link">About Me</a></li>
+                        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Footer Copyright and Credit -->
+                <div class="footer-info">
+                    <p class="footer-copyright">
+                        Copyright © 2025 Zagros Jawar. All rights reserved.
+                    </p>
+                    <p class="footer-credit">
+                        Designed and developed by <strong>Zagros Jawar</strong>.
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
